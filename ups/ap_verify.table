@@ -1,18 +1,4 @@
-
-setupRequired(utils)
-setupRequired(afw)
-setupRequired(daf_persistence)
-setupRequired(pipe_tasks)
-setupRequired(verify)
 setupRequired(ap_pipe)
-setupRequired(ctrl_mpexec)
-
-# For testing
-setupOptional(ap_verify_testdata)
-setupOptional(obs_lsst)
-
-# For default metric configs
-setupRequired(ip_diffim)
 setupRequired(ap_association)
 
 # Datasets other than ap_verify_testdata must be set up manually
