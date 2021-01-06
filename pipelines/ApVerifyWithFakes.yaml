@@ -36,6 +36,8 @@ tasks:
             connections.fakesType: "fakes_"
     matchFakes:
         class: lsst.ap.pipe.matchApFakes.MatchApFakesTask
+        config:
+            matchDistanceArcseconds: 0.1
 contracts:
     # Metric inputs must match pipeline outputs
     - createFakes.connections.fakesType == coaddFakes.connections.fakesType
